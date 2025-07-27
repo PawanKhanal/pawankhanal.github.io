@@ -17,6 +17,7 @@
 <title>Pawan Khanal - Software Developer</title>
 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Defer large CSS files -->
 <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'" />
@@ -438,23 +439,7 @@
             transform: translateX(50px);
             transition: all 0.6s ease;
         }
-      .navbar-toggler {
-  width: 48px;
-  height: 48px;
-  padding: 8px;        
-  margin-left: 10px;      
-  cursor: pointer;
-}
-
-.navbar-brand {
-  display: inline-block;
-  padding: 10px 15px;   
-  font-size: 1.5rem;
-  cursor: pointer;
-  user-select: none;
-}
-
-
+     
         .slide-in-right.visible {
             opacity: 1;
             transform: translateX(0);
@@ -468,7 +453,7 @@
   <div class="container">
     <a class="navbar-brand px-2 py-2" href="#home" style="min-width: 48px; min-height: 48px;">Pawan Khanal</a>
 
-    <button class="navbar-toggler ms-2"
+<button class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
@@ -478,6 +463,7 @@
         style="width: 48px; height: 48px;">
   <span class="navbar-toggler-icon"></span>
 </button>
+
 
 
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -1053,21 +1039,21 @@
         window.addEventListener('load', createParticles);
 
         // Mobile menu enhancement
-        const navbarToggler = document.querySelector('.navbar-toggler');
-        const navbarCollapse = document.querySelector('.navbar-collapse');
+        // const navbarToggler = document.querySelector('.navbar-toggler');
+        // const navbarCollapse = document.querySelector('.navbar-collapse');
 
-        if (navbarToggler && navbarCollapse) {
-            navbarToggler.addEventListener('click', function() {
-                navbarCollapse.classList.toggle('show');
-            });
+        // if (navbarToggler && navbarCollapse) {
+        //     navbarToggler.addEventListener('click', function() {
+        //         navbarCollapse.classList.toggle('show');
+        //     });
 
-            // Close mobile menu when clicking on a link
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', function() {
-                    navbarCollapse.classList.remove('show');
-                });
-            });
-        }
+        //     // Close mobile menu when clicking on a link
+        //     document.querySelectorAll('.nav-link').forEach(link => {
+        //         link.addEventListener('click', function() {
+        //             navbarCollapse.classList.remove('show');
+        //         });
+        //     });
+        // }
 
         // Add custom cursor effect (optional)
         document.addEventListener('mousemove', function(e) {
